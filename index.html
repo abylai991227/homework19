@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .block{
+            display: block;
+            border: 5px solid red;
+            justify-content: space-between;
+            width: 100px;
+            height: 50px;
+            margin: 20px;
+
+        }
+         
+        .inline{
+            display: inline;
+            border: 5px solid black;
+            justify-content: space-between;
+            width: 100px;
+            height: 50px;
+            margin: 20px;
+
+        }
+
+        .flex{
+            display: flex;
+            flex-direction: row;
+           justify-content: center;
+           align-items: center;
+           height: 100px;
+           width: 300px;
+           background-color: lightgrey;
+           border: 5px solid fuchsia;
+           margin: 20px;
+
+
+        }
+        .flexblock{
+
+            background-color: aquamarine;
+            border: 5px solid green;
+            padding: 10px;
+          
+        }
+        
+        .flexconteiner{
+            display: flex;
+         
+            flex-wrap: wrap;
+            margin: 20px;
+            justify-content: center;
+            align-items: center;
+            align-content: end;
+            height: 200px;
+            width: 300px;
+            background-color: bisque;
+            border: 5px solid yellow;
+        }
+
+
+       .item{
+        background-color: aqua;
+        border: 1px solid black;
+       }
+       
+      .flex333{
+        display: flex;
+        margin: 20px;
+         flex-wrap: wrap;
+        
+         justify-content: center;
+         align-items: center;
+         align-content: center;
+         height: 200px;
+         width: 300px;
+         background-color: bisque;
+         border: 5px solid rgb(11, 11, 11);
+      }
+
+      .grow{  
+        background-color: rgb(7, 16, 250);
+        border: 1px solid black;
+        flex: 1 1 100px;
+       
+
+      }
+        .shrink{
+        background-color: rgb(234, 7, 143);
+        border: 1px solid black;
+        flex: 2 2 110px;
+        
+
+        } 
+
+       .basis{
+        background-color: rgb(32, 225, 70);
+        border: 1px solid black;
+        flex: 130px;}
+       
+    .conteiner{
+        display: flex;
+         margin: 20px;
+         flex-wrap: wrap;
+       
+         justify-content: center;
+         align-items: center;
+         align-content: center;
+         height: 500px;
+         width: 400px;
+         background-color: bisque;
+         border: 5px solid rgb(172, 14, 14);
+
+    }
+    .qwe {
+    background-color: rgb(7, 16, 250);
+        border: 1px solid black;
+        flex: 0 0 50%;
+    }
+    .asd {
+
+        background-color: brown;
+        border: 1px solid yellowgreen;
+        flex: 1 1 auto ;
+    }
+    .zxc{
+        background-color: purple;
+        border: 1px darkorange;
+        flex: 0 0 100px;
+    }
+
+.menu{
+    display:flex;
+    flex-direction: column;
+         margin: 20px;
+         flex-wrap: wrap;
+       
+         justify-content: center;
+         align-items: center;
+         align-content: center;
+         height: 500px;
+         width: 400px;
+         background-color: bisque;
+         border: 5px solid rgb(5, 227, 71);
+
+
+
+
+}
+.menu a:hover{
+    background-color: blueviolet;
+
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid green;
+    justify-content: center;
+    background-color: beige;
+    padding: 10px;
+}
+
+.card {
+    flex: 2 3 calc(20% - 30px); 
+    padding: 10px;
+    background-color: lightcoral;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+    
+    </style>
+</head>
+<body>
+    <div class="block">блочный</div>
+    <div class="inline">линейный</div>
+    
+    <div class="flex">
+        <div class="flexblock">флекс в блоке</div>
+    </div>
+     
+    <div class="flexconteiner"> 
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+    </div>
+    
+    <div class="flex333">
+        <div class="grow">флекс гроу</div>
+        <div class="shrink"> флекс шринк</div>
+        <div class="basis"> флекс базис</div>
+    </div>
+   
+     <div class="conteiner">
+     <div class="qwe">  Первый элемент занимает 50% ширины контейнера</div>
+     <div class="asd"> Второй элемент занимает оставшуюся ширину</div>
+     <div class="zxc">Третий элемент всегда остаётся </div>
+     </div>
+
+
+     <div class="menu">
+        <a href="aaaaaa">aaaaaaaa</a>
+        <a href="ssssss">ssssssss</a>
+        <a href="dddddd">dddddddd</a>
+        <a href="ffffff">ffffffff</a>
+     </div>
+     <div class="gallery">
+        <div class="card">
+            1. Создайте контейнер для галереи и</div>
+        <div class="card">
+            1. Создайте контейнер для галереи и</div>
+        <div class="card">
+            1. Создайте контейнер для галереи и</div>
+        <div class="card">
+            1. Создайте контейнер для галереи и</div>
+    </div>
+</body>
+</html>
